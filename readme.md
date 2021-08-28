@@ -5,3 +5,4 @@
 - `2309. 일곱 난쟁이` - [Java](./src/BOJ2309/Main.java)
 - `2605. 줄 세우기` - [Java](./src/BOJ2605/Main.java)
 - `2578. 빙고` - [Java](./src/BOJ2578/Main.java)
+- `2563. 색종이` - [Java](./src/BOJ2563/Main.java)

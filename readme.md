@@ -6,6 +6,7 @@
 - `2605. 줄 세우기` - [Java](./src/BOJ2605/Main.java)
 - `2578. 빙고` - [Java](./src/BOJ2578/Main.java)
 - `2563. 색종이` - [Java](./src/BOJ2563/Main.java)
+- `7576. 토마토` - [Javascript](./src/BOJ7576/Main.js)
 
 ## plop
 

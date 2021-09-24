@@ -1,4 +1,17 @@
 module.exports = function (plop) {
+  const txtAction = [
+    {
+      type: 'add',
+      path: 'src/BOJ{{id}}/input.txt',
+      skipIfExists: true,
+    },
+    {
+      type: 'add',
+      path: 'src/BOJ{{id}}/output.txt',
+      skipIfExists: true,
+    },
+  ]
+
   /**
    * Node.js Solution Generator
    */
@@ -23,6 +36,7 @@ module.exports = function (plop) {
         path: 'src/BOJ{{id}}/Main.js',
         templateFile: 'templates/Main.js.hbs',
       },
+      ...txtAction,
     ],
   })
 
@@ -50,6 +64,7 @@ module.exports = function (plop) {
         path: 'src/BOJ{{id}}/Main.java',
         templateFile: 'templates/Main.java.hbs',
       },
+      ...txtAction,
     ],
   })
 }

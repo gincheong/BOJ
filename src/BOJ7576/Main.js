@@ -1,7 +1,7 @@
 // BOJ7576: 토마토
 const fs = require('fs')
 const input = fs.readFileSync('src/BOJ7576/input.txt').toString().split('\n')
-// const input = fs.readFileSync('./dev/stdin').toString()
+// const input = fs.readFileSync('./dev/stdin').toString().split('\n')
 
 class Point {
   /**
@@ -19,7 +19,7 @@ let C, R
 // 토마토 상자 배열
 const box = []
 // 상하좌우를 탐색할 익은 토마토 리스트
-const tomatoList = []
+let tomatoList = []
 // 익지 않은 토마토 수
 let rawTomatoCount = 0
 
@@ -68,7 +68,10 @@ const BFS = () => {
     const length = tomatoList.length
 
     for (let i = 0; i < length; i++) {
-      const current = tomatoList.shift()
+      // ! shift() 함수는 O(N)입니다.
+      // const current = tomatoList.shift()
+
+      const current = tomatoList[i]
 
       for (const each of dxy) {
         const nextRow = parseInt(current.x) + each.x
@@ -86,6 +89,9 @@ const BFS = () => {
         }
       }
     }
+
+    // 방문 마친 원소들 잘라내기
+    tomatoList = tomatoList.slice(length)
   }
 
   if (count == rawTomatoCount) {

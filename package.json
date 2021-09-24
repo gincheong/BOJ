@@ -1,0 +1,15 @@
+{
+  "name": "boj",
+  "version": "1.0.0",
+  "description": "백준 문제를 푸는 레포지토리입니다.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gincheong/BOJ.git"
+  },
+  "author": "",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}
